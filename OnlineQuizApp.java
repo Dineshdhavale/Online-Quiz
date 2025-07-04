@@ -4,6 +4,29 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+class Question {
+    private String questionText;
+    private String[] options;
+    private int correctOptionIndex; 
+
+    public Question(String questionText, String[] options, int correctOptionIndex) {
+        this.questionText = questionText;
+        this.options = options;
+        this.correctOptionIndex = correctOptionIndex;
+    }
+
+    public String getQuestionText() {
+        return questionText;
+    }
+
+    public String[] getOptions() {
+        return options;
+    }
+
+    public int getCorrectOptionIndex() {
+        return correctOptionIndex;
+    }
+}
 public class OnlineQuizApp {
 	 
 	public static void main(String[] args) {
@@ -79,31 +102,6 @@ public class OnlineQuizApp {
     }
 }
 
-class Question {
-    private String questionText;
-    private String[] options;
-    private int correctOptionIndex; 
-
-    public Question(String questionText, String[] options, int correctOptionIndex) {
-        this.questionText = questionText;
-        this.options = options;
-        this.correctOptionIndex = correctOptionIndex;
-    }
-
-    public String getQuestionText() {
-        return questionText;
-    }
-
-    public String[] getOptions() {
-        return options;
-    }
-
-    public int getCorrectOptionIndex() {
-        return correctOptionIndex;
-    }
-
-		 
-	}
 
         
 
